@@ -62,8 +62,8 @@ urlpatterns = [
 
 ## Hello World
 
-Here is a link to my [Hello List](https://github.com/LukeSchlangen/simplified-react-axios) example built with React and Axios. This returns an array from a `mockable` http endpoint and displays it on the DOM.
+Here is a link to my [Django-Hello](https://github.com/cbrenberg/django-hello) example built with Python 3.7.1 and Django. This app serves an HttpResponse 'Hello World' string at http://localhost:8000/hello/
 
 ## Next steps
 
-The next steps for learning this is to understand the role of middleware like flux/redux and logging/sagas. These are tools used to manage state, but since this [Hello List](https://github.com/LukeSchlangen/simplified-react-axios) example only has a single state (displaying the list), the next step will likely be adding something to the list with a `POST`.
+The next steps for learning this is to understand how Django interacts with the client and DOM to add user interface functionality and styling to the app. I'd like to work on building this app into a basic To Do list or Blog application, and maybe even switch from Django's default SQLite database to either PostgreSQL or Graphene (A Python GraphQL library)
