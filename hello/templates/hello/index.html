@@ -6,8 +6,13 @@
 <h1>Todo List</h1>
 <div id="todoList">
   {% for todo in todo_list %}
-  <div class="todoItem">
-    {{ todo.todo_item }} : <span>{{ todo.due_date }}</span>
+  <div class="todoItem {% if todo.is_complete %}complete{%endif%}">
+    <label class="todoLabel">
+      <input type="checkbox" {% if todo.is_complete %}checked{% endif %} value="{{todo.id}}" class="todoCheck" />
+      <span class="checkmark"></span>
+    </label>
+    <div>{{ todo.todo_item }}</div>
+    <span class="dueDate">{{ todo.due_date }}</span>
   </div>
   {% endfor %}
 </div>
