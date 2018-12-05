@@ -1,0 +1,19 @@
+body {
+  background-color: whitesmoke;
+  font-family: sans-serif;
+}
+
+#todoList {
+  background-color: white;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  box-shadow: 2px 2px 10px gainsboro;
+}
+
+.todoItem {
+  padding: 3vh;
+  height: 20vh;
+  font-size: 2vw;
+}

@@ -1,0 +1,16 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'hello/todo.css' %}">
+
+{% if todo_list %}
+<h1>Todo List</h1>
+<div id="todoList">
+  {% for todo in todo_list %}
+  <div class="todoItem">
+    {{ todo.todo_item }} : <span>{{ todo.due_date }}</span>
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<p>No todos are available.</p>
+{% endif %}
